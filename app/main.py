@@ -14,7 +14,6 @@ def get_human_age(cat_age: int, dog_age: int) -> list:
         get_human_age(15, 15) == [1, 1]
         get_human_age(24, 24) == [2, 2]
     """
-    # TODO: Implement this function
     human_age_until_cat_list = [15, 9, 4]
     human_age_until_dog_list = [15, 9, 5]
 

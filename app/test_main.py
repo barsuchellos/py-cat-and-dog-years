@@ -14,9 +14,13 @@ from app.main import get_human_age
         pytest.param(24, 24, [2, 2],
                      id="test_values_to_get_two_human_years"),
         pytest.param(27, 27, [2, 2],
-                     id="test_values_to_get_two_human_years"),
+                     id="test_values_to_get_two_and_two_human_years"),
+        pytest.param(28, 28, [3, 2],
+                     id="test_values_to_get_three_and_two_human_years"),
         pytest.param(32, 34, [4, 4],
                      id="test_values_to_get_three_and_more_human_years"),
+        pytest.param(100, 100, [21, 17],
+                     id="test_values_to_get_larger_human_years"),
     ]
 )
 def test_human_age(cat_age: int, dog_age: int, expected: list) -> None:
